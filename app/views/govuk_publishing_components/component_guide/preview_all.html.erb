@@ -1,0 +1,14 @@
+<%= render 'govuk_publishing_components/components/title', title: GovukPublishingComponents::Config.component_guide_title %>
+<ul class="component-list" id="components-in-the-gem-list">
+  <% @gem_component_docs.each do |component_doc| %>
+    <li>
+      <h2><%= component_doc.name %></h2>
+      <% component_doc.examples.each do |example| %>
+        <h3><%= example.name %></h3>
+        <%= component_doc.partial_path %>
+        <%# <%= render "govuk_publishing_components/component_guide/component_doc/component", component_doc: component_doc, example: example, preview_page: false %> %>
+
+      <% end %>
+    </li>
+  <% end %>
+</ul>

@@ -36,6 +36,14 @@ module GovukPublishingComponents
       end
     end
 
+    def preview_all
+      @gem_component_docs = gem_component_docs.all
+      @gem_component_docs.each{ |component|
+        puts '--------------------------------------'
+        puts component.source
+      }
+    end
+
   private
 
     def component_docs

@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "jasmine", "~> 2.4.0"
   s.add_development_dependency "rspec-rails", "~> 3.6"
   s.add_development_dependency "uglifier", ">= 1.3.0"
+  s.add_development_dependency "percy-capybara", "~> 4.0.0"
   s.add_development_dependency "pry-byebug"
   # Webmock is needed to load slimmer test helpers
   # https://github.com/alphagov/slimmer/issues/201

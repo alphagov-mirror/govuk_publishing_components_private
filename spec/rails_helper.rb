@@ -6,7 +6,7 @@ require 'rspec/rails'
 require 'capybara/rails'
 require 'govuk_test'
 
-GovukTest.configure
+GovukTest.configure(chrome_options: { w3c: true })
 Selenium::WebDriver::Remote::Capabilities.chrome(loggingPrefs: { browser: 'ALL' })
 
 RSpec.configure do |config|
