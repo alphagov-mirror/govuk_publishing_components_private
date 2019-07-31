@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "govuk_schemas", "~> 3.2"
   s.add_development_dependency "govuk_test", "~> 1"
   s.add_development_dependency "jasmine", "~> 3.4.0"
+  s.add_development_dependency "percy-capybara", "~> 4.0", ">= 4.0.2"
   s.add_development_dependency "pry-byebug"
   s.add_development_dependency "rspec-rails", "~> 3.8"
   s.add_development_dependency "uglifier", ">= 4.1.0"

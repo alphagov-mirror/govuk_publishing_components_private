@@ -165,6 +165,7 @@ GEM
     parallel (1.17.0)
     parser (2.6.3.0)
       ast (~> 2.4.0)
+    percy-capybara (4.0.2)
     phantomjs (2.1.1.0)
     plek (3.0.0)
     pry (0.12.2)
@@ -319,6 +320,7 @@ DEPENDENCIES
   govuk_schemas (~> 3.2)
   govuk_test (~> 1)
   jasmine (~> 3.4.0)
+  percy-capybara (~> 4.0, >= 4.0.2)
   pry-byebug
   rspec-rails (~> 3.8)
   uglifier (>= 4.1.0)
