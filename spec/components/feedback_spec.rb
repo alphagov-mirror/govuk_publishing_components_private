@@ -32,6 +32,12 @@ describe "Feedback", type: :view do
     assert_select ".gem-c-feedback #survey-wrapper [name='email_survey_signup[survey_id]']"
   end
 
+  it "links are wrapped in an unordered list" do
+    render_component({})
+
+    assert_select ".gem-c-feedback .gem-c-feedback__prompt-link-list", true
+  end
+
   describe "ASCII characters" do
     let(:ascii_url)     { 'http://www.test.com/test?áscii=%EE%90%80'.force_encoding('ASCII-8BIT') }
     let(:utf8_url)      { ascii_url.encode }

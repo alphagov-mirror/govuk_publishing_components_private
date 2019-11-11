@@ -5,7 +5,8 @@
 <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
   <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
     <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
-
+    <ul class="gem-c-feedback__prompt-link-list">
+    <li hidden="hidden">
     <%= link_to contact_govuk_path, {
       class: 'gem-c-feedback__prompt-link',
       data: {
@@ -20,7 +21,8 @@
     } do %>
       Maybe
     <% end %>
-
+    </li>
+    <li>
     <%= link_to contact_govuk_path, {
       class: 'gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful',
       data: {
@@ -32,7 +34,8 @@
     } do %>
       Yes <span class="visually-hidden">this page is useful</span>
     <% end %>
-
+    </li>
+    <li>
     <%= link_to contact_govuk_path, {
       class: 'gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful',
       data: {
@@ -45,7 +48,8 @@
     } do %>
       No <span class="visually-hidden">this page is not useful</span>
     <% end %>
-
+    </li>
+    <li>
     <%= link_to contact_govuk_path, {
       class: 'gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong',
       data: {
@@ -58,6 +62,8 @@
     } do %>
       Is there anything wrong with this page?
     <% end %>
+    </li>
+    </ul>
   </div>
 
   <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">

@@ -43,6 +43,11 @@
   outline: 0;
 }
 
+.gem-c-feedback__prompt-link-list {
+  margin: 0;
+  list-style: none;
+}
+
 .gem-c-feedback__prompt-question,
 .gem-c-feedback__prompt-success {
   @include govuk-font(19, $weight: bold);
